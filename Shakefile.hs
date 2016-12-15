@@ -7,15 +7,18 @@ import Development.Shake.Util
 
 
 hostsFile = "hosts"
+ansible = "ansible-playbook -i " ++ hostsFile
 
 
 main :: IO ()
 main = shakeArgs shakeOptions $ do
   "ping" ~> cmd "ansible all -i" hostsFile "-m ping"
 
-  forM_ ["common", "ytoyama"] $ \target -> do
-    target ~> do
-      cmd "ansible-playbook --ask-become-pass -i" hostsFile (target ++ ".yml")
+  "common" ~> do
+    cmd ansible "--ask-become-pass common.yml"
+
+  "ytoyama" ~> do
+    cmd ansible "ytoyama.yml"
 
   "clean" ~> do
     cmd Shell "rm -f *.retry"
