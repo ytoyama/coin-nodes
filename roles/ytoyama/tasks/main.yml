@@ -1,0 +1,7 @@
+- shell: rcdn
+
+- git:
+    repo: https://raviqqe@github.com/raviqqe/dotfiles
+    dest: /home/toyama.12056/.dotfiles
+
+- shell: rcup

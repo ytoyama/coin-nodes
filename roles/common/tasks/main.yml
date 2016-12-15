@@ -5,6 +5,9 @@
 - selinux:
     state: disabled
 
+- shell: dnf -y copr enable seeitcoming/rcm && dnf -y install rcm
+  when: ansible_distribution == 'Fedora'
+
 - dnf: name={{ item }} state=latest
   with_items:
     - python3
