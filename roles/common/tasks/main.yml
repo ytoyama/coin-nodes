@@ -44,3 +44,15 @@
     - tig
     - htop
     - sl
+
+    - python-scikit-learn
+    - python3-scikit-learn
+    - h5py
+    - python3-h5py
+
+    - mecab
+    - mecab-devel
+    - mecab-ipadic
+    - python-mecab
+    - python-nltk
+    - python3-nltk
