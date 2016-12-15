@@ -5,3 +5,6 @@
     dest: /home/toyama.12056/.dotfiles
 
 - shell: rcup
+
+- shell: cabal update && cabal install shake
+- shell: gem install block-is-array dockerfile-dsl
