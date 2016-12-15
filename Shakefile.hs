@@ -12,12 +12,15 @@ ansible = "ansible-playbook -i " ++ hostsFile
 
 main :: IO ()
 main = shakeArgs shakeOptions $ do
+  want ["ytoyama"]
+
   "ping" ~> cmd "ansible all -i" hostsFile "-m ping"
 
   "common" ~> do
     cmd ansible "--ask-become-pass common.yml"
 
   "ytoyama" ~> do
+    need ["common"]
     cmd ansible "ytoyama.yml"
 
   "clean" ~> do
