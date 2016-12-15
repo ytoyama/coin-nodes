@@ -33,6 +33,7 @@
 
     - rubygem-rake
     - bmake
+    - shake
     - ninja-build
 
     - docker
