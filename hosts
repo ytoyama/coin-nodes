@@ -1,0 +1,4 @@
+[hosts]
+133.21.225.145 ansible_user=toyama.12056
+133.21.225.146 ansible_user=toyama.12056
+133.21.225.147 ansible_user=toyama.12056
