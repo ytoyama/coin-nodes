@@ -4,3 +4,38 @@
 
 - selinux:
     state: disabled
+
+- dnf: name={{ item }} state=latest
+  with_items:
+    - python3
+    - python3-pip
+    - python
+    - python-pip
+    - golang
+    - ghc
+    - cabal-install
+
+    - zsh
+    - tmux
+    - screen
+    - vim
+    - emacs
+
+    - git
+    - subversion
+    - mercurial
+
+    - lynx
+    - links
+
+    - rubygem-rake
+    - bmake
+    - ninja-build
+
+    - docker
+    - gawk
+    - nmap
+    - bind-utils
+    - tig
+    - htop
+    - sl
