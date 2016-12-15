@@ -37,6 +37,7 @@
     - ninja-build
 
     - docker
+    - ansible
     - gawk
     - nmap
     - bind-utils
