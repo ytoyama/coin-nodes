@@ -43,6 +43,7 @@
     - bind-utils
     - tig
     - htop
+    - cowsay
     - sl
 
     - python-scikit-learn
