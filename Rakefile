@@ -46,5 +46,5 @@ task :default => :ytoyama
 
 
 Rake::Task[:clean].enhance do
-  sh 'git clean -fX'
+  sh 'git clean -fx'
 end
