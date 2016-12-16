@@ -1,0 +1,21 @@
+domain: coin.toyota-ti.ac.jp
+
+loopbacks:
+  127.0.0.1:
+    - localhost.localdomain
+    - localhost
+  "::1":
+    - localhost6.localdomain6
+    - localhost6
+
+hosts:
+  133.21.225.142: coinfs3
+  133.21.225.143: coinfs4
+  133.21.225.144: coinfs5
+  133.21.225.145: coinfs6
+  133.21.225.148: coinfs7
+  133.21.225.131: srv1
+  133.21.225.139: srv7
+  133.21.225.146: srv10
+  133.21.225.147: srv11
+  133.21.225.160: gokiso
